@@ -78,7 +78,7 @@ func main() {
         }
     }
 
-    if err := f.SaveAs("pjm-committee-subset.xlsx"); err != nil {
+    if err := f.SaveAs("pjm-committee-docs.xlsx"); err != nil {
         println(err.Error())
     }
     
