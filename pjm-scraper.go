@@ -41,18 +41,17 @@ func main() {
         href := e.Attr("href")
         if strings.Contains(href, "committees-and-groups/committees") {
             c.Visit(e.Request.AbsoluteURL(href))
+        } else if strings.Contains(href, "committees-and-groups/user-groups") {
+            c.Visit(e.Request.AbsoluteURL(href))
+        } else if strings.Contains(href, "committees-and-groups/tech-change-forum") {
+            c.Visit(e.Request.AbsoluteURL(href))
+        } else if strings.Contains(href, "committees-and-groups/subcommittees") {
+            c.Visit(e.Request.AbsoluteURL(href))
+        } else if strings.Contains(href, "committees-and-groups/task-forces") {
+            c.Visit(e.Request.AbsoluteURL(href))
+        } else if strings.Contains(href, "committees-and-groups/stakeholder-meetings") {
+            c.Visit(e.Request.AbsoluteURL(href))
         }
-        // } else if strings.Contains(href, "committees-and-groups/user-groups") {
-        //     c.Visit(e.Request.AbsoluteURL(href))
-        // } else if strings.Contains(href, "committees-and-groups/tech-change-forum") {
-        //     c.Visit(e.Request.AbsoluteURL(href))
-        // } else if strings.Contains(href, "committees-and-groups/subcommittees") {
-        //     c.Visit(e.Request.AbsoluteURL(href))
-        // } else if strings.Contains(href, "committees-and-groups/task-forces") {
-        //     c.Visit(e.Request.AbsoluteURL(href))
-        // } else if strings.Contains(href, "committees-and-groups/stakeholder-meetings") {
-        //     c.Visit(e.Request.AbsoluteURL(href))
-        // }
     })
 
     //Print when visiting
